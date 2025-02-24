@@ -9,4 +9,4 @@ let a="Juhair";
 console.log(typeof a)
 
 let score2=new Number(100)
-console.log(typeof score2)//object
+console.log(typeof score2)
