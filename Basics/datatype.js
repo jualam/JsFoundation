@@ -13,3 +13,26 @@ console.log(gameName);
 
 const userName="juhair Alam" //you can not change const variable later
 console.log(userName);
+
+let score2=new Number(100)
+console.log(typeof score2)//object
+
+//Undefined
+let firstname;
+console.log(typeof firstname);
+
+//Null
+let lastname=null;
+console.log(lastname)
+
+//String
+let myString="Hello"
+let myname='Juhair'
+let greetMessage="How are you doing?"
+let a=myString+myname+greetMessage
+console.log(a);//no space in between
+
+console.log(`${myString}! My name is ${myname}.${greetMessage} My exam score is ${score}.`)//space in between
+
+let demoOne=`Value is ${4*3}`
+console.log(demoOne)
