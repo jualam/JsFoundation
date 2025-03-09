@@ -23,13 +23,12 @@ function Car(make) {
     this.make = make;
 }
 // Adding a method to the prototype
-Car.prototype.start = function() {
-    return `${this.make} car is starting...`;
+Car.prototype.start = function(driver) {
+    return `${driver} is starting the ${this.make} car...`;
 };
 
 const myCar = new Car("Toyota");
-
 console.log(myCar.make);     // ✅ Output: "Toyota"  (Found in myCar)
-console.log(myCar.start());  // ✅ Output: "Toyota car is starting..."  (Found in prototype)
+console.log(myCar.start("John"));  // ✅ Output: "Toyota car is starting..."  (Found in prototype)
 console.log(myCar.hasOwnProperty("make"));  // ✅ Output: true
 console.log(myCar.hasOwnProperty("start")); // ✅ Output: false (start is in prototype)
