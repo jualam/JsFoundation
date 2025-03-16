@@ -51,4 +51,18 @@ document.getElementById('feedbackForm').addEventListener('submit',function(event
     event.preventDefault();
     let feedback=document.getElementById('feedbackInput').value
     document.getElementById('feedbackDisplay').textContent=`Feedback is : ${feedback}`
+    a=document.getElementById('feedbackDisplay');
+    a.style.color='red';
+    a.style.backgroundColor='yellow'
+})
+
+//Example 9
+document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('domStatus').textContent="DOM fully Loaded"
+})
+
+//Example 10
+document.getElementById('toggleHighlight').addEventListener('click',function(){
+    let descriptionText=document.getElementById('descriptionText');
+    descriptionText.classList.toggle('highlight')
 })
